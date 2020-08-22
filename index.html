@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<HTML>
+  <HEAD>
+    <title>
+    Domination
+    </title>
+<style>
+   body { background-color:lightgrey;
+          margin:0;
+       }
+
+   ul {
+        list-style-type:none;
+        margin: 100;
+        padding: 500;
+        width:100%;
+        background-color:#333;
+        overflow: auto;
+        position:fixed
+        top:100;     
+       }
+       
+  li{ 
+        float: left;
+      }
+
+  
+
+   
+  li a {
+        display:block;   
+        padding:14px 16px;     
+        color: white;
+        text-decoration: none;
+        text-align:center;
+         }
+ .active {  
+     background-color: steelblue;        
+          }
+   
+li a:hover:not(.active) {  
+        background-color:turquoise; 
+        
+        }
+.dropdown { 
+             position:relative; 
+             display: inline-block;     
+          }
+
+.dropbtn {background-color:steelblue;
+           color:white;
+           padding:16px;
+           font-size: 16px;
+           border:none;
+           cursor:pointer;
+          
+      }
+.dropdown-content { background-color:#f9f9f9;
+                    min-width:160px;
+                    rgba(0,0,0,0.2);
+                     box-shadow:0px 8px 16px 0px
+                     display:none;
+                     position: absolute;
+     }
+
+.dropdown-content a { color:black;
+                      padding:12px 16px;
+                      text-decoration:none;
+                      display:block;
+          }
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+     }
+
+
+.dropdown:hover .dropbtn { background-color: turquoise;
+                          
+      }
+.dropdown:hover.dropdown-content { display:block;
+       }
+   
+      
+</style>
+  </head>
+ <body>
+  
+  
+  <ul> 
+   <li><a class="active" #ref="Content"> Content</a></li>
+   <li><a #ref="About Us"> About us </a></li>
+   <li><a #ref="Our Vision"> Our Vision </a></li>
+   <li><a #ref="Weekly Program"> Weekly Program </a></li>
+   <li><a #ref="Coming up event"> Coming up Events </a></li>
+   <li><a #ref="Prayer Line"> Prayer Line </a></li>
+  </ul>
+
+ <div style="padding:20px; margin-top:30px; height:500px"> 
+   <p2>
+   <u>Our Vision:</u><br>
+   </p2>
+   <p2>all power in heavens and on the earth is given to me, Go and make 
+   of all nations my disciples. Teach them to keep <br>
+   everything I've taught you. Such is the word of our Lord Jesus <br>
+   when he was about to leave his disciples. From these statement of Jesus <br>
+   come down two main assignements: the Domination over the powers of <br>
+   darkness and the discipleship. These two assignments, in addition to the fact<br> 
+   that we believe God has a wonderful plan for every men  he created<br>
+   are the vision.....
+   </p2>
+   <hr>
+   <p2><u>Weekly Program:<br></u></p2>
+   <p2>
+    Sunday: worship<br>
+    Tuesday: Bible Study<br>
+    Friday: Prayer<br>
+    Saturday : Prayer<br>
+    </p2>
+     <hr>
+    <p2> <u>Coming up Events:<br></u></p2>
+    <p2> First service ushering </p2>
+    <hr>
+    <p2><u> Prayer Line:<br></u></p2> 
+    <p2> Phone Contact: 980-250-4343 </p2>
+ </div>
+   
+  <h3>Hover over for options<h3>
+ <div class="dropdown"> 
+     
+   <button class="dropbtn"> Content </button>
+
+   <div class="dropdown-content">
+      <a href="#"> Our Vision</a>
+      <a href="#"> Coming up Events</a>
+      <a href="#"> Weekly Program</a>
+   </div> 
+  </div>
+ </body>
+</HTML>
