@@ -1,24 +1,24 @@
- div{
-      margin-top=300px; height=1500px
+ body { 
+         background-color: lightgrey;
+       }
+  
+ div {
+      margin-top: 300px; 
+      height: 1500px;
  }
 
   li {
-   float:right;
+   float: right;
    }
-
-   body { 
-         background-color:lightgrey
-       }
-
 
 
    ul {
         list-style-type:none;
         margin: 0;
         padding: 0;
-        width=100%;
-        background-color:#f1f1f1;
-        overflow: auto
+        width: 100%;
+        background-color: #f1f1f1;
+        overflow: auto;
         position:relative;      
  }
    
@@ -29,7 +29,7 @@
         text-decoration: none;
         text-align:center;
 }
-    li a.active {  
+    li .active {  
      
         background-color: steelblue;
         
@@ -38,5 +38,8 @@
         background-color:turquoise; 
         overflow:auto
 }
-   
+  
+    img {
+     color: white;
+    } 
       
