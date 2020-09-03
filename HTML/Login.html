@@ -5,60 +5,37 @@
     <title>
     Login 
     </title>
-   <style>
-   body { background-color:lightgrey
-       }
-  li{ float: left;
-      }
-
-
-   ul {
-        list-style-type:none;
-        margin: 0;
-        padding: 0;
-        width=100%;
-        background-color:#f1f1f1;
-        overflow: auto
-        position:relative
-       
-        
- }
-  
-
+  <link ref = "styleSheet" href = "./style.css">
    
-  li a {
-        display:block;   
-        padding:14px 16px;     
-        color: #000;
-        text-decoration: none;
-        text-align:center;
-}
-    li a.active {  
-     
-        background-color: steelblue;
-        
-}
-   li a:hover:not(.active) {  
-        background-color:turquoise; 
-        overflow:auto
-}
-   
-      
-</style>
-
    </head>
    <body>
- <a img = "Eklou.png">Welcome!</a>
+ <img src = "Eklou.png">
+    
     <div>
-        <input type ="text" name = "" placeholder = "Enter Username">
+        <input name="" type ="text" placeholder = "Enter Username">
         Username</input>
         <br>
-       <input type = "password" name ="" placeholder = "Enter Password">
+       <input type = "password" name="" placeholder = "Enter Password">
        Password</input>
         <br>
-       <input type ="submit" name="" value="Login">
-    
+       <h1 id = "iname">Welcome!</h1>
+       
+       <input type ="button" 
+              name ="sub"
+              value = "submit"
+            onclick ="myName()"
+         />
+     
     </div>
      <h1>Go back to welcome page.</h1>
-     <a href = "./index.html">Go to Welcome Page</a> 
+     <a href = "./index.html">Go to Welcome Page</a>
+    <script src = "js/script1.js"></script>
+ 
+         <script>
+     function myName(){
+     var name1 = document.getElementById("iname").innerHTML="Yawo";
+     console.log(name1);
+      }
+     </script>
    </body> 
+ </html>
